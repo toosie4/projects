@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Construction & Mechanical Company — Design · Engineer · Deliver</title>
-    <meta name="description" content="Home Construction & Mechanical Company — integrated design-build, MEP, HVAC and cold-room specialists in Nairobi. Request a tailored estimate or download technical briefs.">
-    <meta name="keywords" content="construction kenya, MEP contractor Nairobi, cold room installation, refrigeration, HVAC, fire safety, design-build">
+    <meta name="description" content="Home Construction & Mechanical Company — integrated design-build, MEP, HVAC and cold storage specialists in Nairobi. Request a tailored estimate or download technical briefs.">
+    <meta name="keywords" content="construction kenya, MEP contractor Nairobi, cold storage installation, refrigeration, HVAC, fire safety, design-build">
     <meta property="og:title" content="Home Construction & Mechanical Company">
-    <meta property="og:description" content="Integrated construction + mechanical systems: Cold rooms, HVAC, MEP, Fire Safety and Design-Build services across Kenya.">
+    <meta property="og:description" content="Integrated construction + mechanical systems: Cold storage, HVAC, MEP, Fire Safety and Design-Build services across Kenya.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://homeconstruction.co.ke/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -201,7 +201,7 @@
             box-shadow: var(--shadow-lg);
         }
 
-        /* ========== HEADER ========== */
+        /* ========== ENHANCED HEADER ========== */
         header {
             position: fixed;
             top: 0;
@@ -214,21 +214,13 @@
             backdrop-filter: blur(15px);
         }
 
-        img {
-            /* Remove or comment out these lines to avoid affecting all images */
-            /* width: 50%; */
-            /* height: 50%; */
-            /* object-fit: scale-down; */
-            /* filter: brightness(0.5); */
-        }
-
         .logo img {
             width: 54px;
             height: 54px;
             object-fit: cover;
             filter: none;
             margin-right: 0px;
-            margin-left: 0;        /* Ensure no left margin on the logo image */
+            margin-left: 0;
             vertical-align: middle;
             display: block;
         }
@@ -236,33 +228,39 @@
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            margin-left: 2px;      /* Add this line to push logo close to the left edge */
+            margin-left: 2px;
         }
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
+        
         .logo h1 {
             font-size: 1.8rem;
             margin: 0;
             color: var(--dark);
+            display: flex;
+            align-items: center;
+            line-height: 1;
+        }
+
+        .logo h1 .logo-h {
+            font-size: 3.2rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 40%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 0.8;
+            margin-right: 2px;
+            font-weight: 800;
+            display: inline-block;
+            text-shadow: 0 2px 4px rgba(245, 124, 0, 0.2);
         }
 
         .logo span {
             color: var(--primary);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .nav-menu {
@@ -960,6 +958,10 @@
             h2 {
                 font-size: 2.2rem;
             }
+            
+            .logo h1 .logo-h {
+                font-size: 2.8rem;
+            }
         }
 
         @media (max-width: 768px) {
@@ -1004,6 +1006,10 @@
             .roi-grid{grid-template-columns:1fr}
             .top-slideshow{ height:180px; }
             .above-team-slideshow{ height:260px; }
+            
+            .logo h1 .logo-h {
+                font-size: 2.4rem;
+            }
         }
 
         @media (max-width: 576px) {
@@ -1032,6 +1038,10 @@
                 padding: 12px 25px;
                 font-size: 0.9rem;
             }
+            
+            .logo h1 .logo-h {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
@@ -1041,12 +1051,13 @@
         <div class="container header-container">
             <div class="logo">
                 <img src="logo.png" alt="logo">
-                <h1>Home<span>Construction Ltd</span></h1>
+                <h1><span class="logo-h">H</span>ome<span>Construction Ltd</span></h1>
             </div>
             
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="coldstorage5.html">Cold Storage</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#tech-hub">Tech Hub</a></li>
@@ -1084,9 +1095,9 @@
     <section class="hero" id="home">
         <div class="container hero-container">
             <div class="hero-content">
-                <div class="kicker">Cold Rooms · MEP · Construction</div>
+                <div class="kicker">Cold Storage · MEP · Construction</div>
                 <h1>Design · Engineer · Commission — Integrated construction and MEP for high-performance buildings and cold-chain systems across Kenya.</h1>
-                <p class="lead">We combine modern design execution, precision mechanical systems, and end-to-end project management to deliver spaces that work — beautifully and reliably. Specialties: Cold room installations, HVAC, fire safety systems, and full MEP integration.</p>
+                <p class="lead">We combine modern design execution, precision mechanical systems, and end-to-end project management to deliver spaces that work — beautifully and reliably. Specialties: Cold storage installations, HVAC, fire safety systems, and full MEP integration.</p>
                 
                 <div class="hero-badges">
                     <div class="chip"><i class="fas fa-check-circle"></i> 5+ Years Experience</div>
@@ -1096,7 +1107,7 @@
                 
                 <div class="hero-btns">
                     <a href="#contact" class="btn btn-primary">Get a tailored estimate</a>
-                    <a href="#projects" class="btn btn-outline">See our case studies</a>
+                    <a href="coldstorage5.html" class="btn btn-outline">Explore Cold Storage</a>
                 </div>
                 
                 <div class="hero-stats">
@@ -1181,17 +1192,17 @@
                 
                 <div class="service-card">
                     <div class="card">
-                        <h3><i class="fas fa-snowflake"></i> Cold Room Solutions</h3>
-                        <p>Specialized cold room design and installation for commercial and industrial applications.</p>
+                        <h3><i class="fas fa-snowflake"></i> Cold Storage Solutions</h3>
+                        <p>Specialized cold storage design and installation for commercial and industrial applications.</p>
                         
                         <ul class="service-features">
-                            <li>Custom cold room design</li>
+                            <li>Custom cold storage design</li>
                             <li>Energy-efficient refrigeration</li>
                             <li>Temperature monitoring systems</li>
                             <li>Maintenance & support</li>
                         </ul>
                         
-                        <a href="#contact" class="btn btn-outline">Learn More</a>
+                        <a href="coldstorage5.html" class="btn btn-outline">Explore Cold Storage</a>
                     </div>
                 </div>
                 
@@ -1275,11 +1286,11 @@
                 </div>
                 
                 <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1556911220-ef412aeaedf0?auto=format&fit=crop&q=80" alt="Cold Room Project" class="project-image">
+                    <img src="https://images.unsplash.com/photo-1556911220-ef412aeaedf0?auto=format&fit=crop&q=80" alt="Cold Storage Project" class="project-image">
                     <div class="project-overlay">
-                        <h3 class="project-title">Retail Cold Storage</h3>
-                        <span class="project-type">Cold Room Installation</span>
-                        <p>120 sqm modular cold room for regional grocery chain with telemetry monitoring.</p>
+                        <h3 class="project-title">Retail Cold Storage Facility</h3>
+                        <span class="project-type">Cold Storage Installation</span>
+                        <p>120 sqm modular cold storage for regional grocery chain with telemetry monitoring.</p>
                         <div class="project-stats">
                             <div class="project-stat">
                                 <i class="fas fa-snowflake"></i>
@@ -1335,10 +1346,10 @@
 
             <div class="hub-grid">
                 <div class="doc">
-                    <h4>Cold Room Tender Pack</h4>
+                    <h4>Cold Storage Tender Pack</h4>
                     <p>Specification, equipment list, commissioning checklist, and typical layouts.</p>
                     <div class="gated">
-                        <button class="btn btn-primary" data-doc="coldroom-pack.pdf">Download PDF</button>
+                        <button class="btn btn-primary" data-doc="coldstorage-pack.pdf">Download PDF</button>
                         <button class="btn btn-outline" id="gated-download">Request via e-mail</button>
                     </div>
                 </div>
@@ -1362,14 +1373,14 @@
 
             <!-- ROI Calculator -->
             <div style="margin-top:40px">
-                <h3>Cold-Room ROI Estimator</h3>
+                <h3>Cold Storage ROI Estimator</h3>
                 <p class="muted">Quick ballpark to understand cost vs energy savings. This is an estimate; a site survey will produce accurate pricing.</p>
 
                 <div class="roi">
                     <div class="roi-grid">
                         <div>
                             <div class="form-group">
-                                <label class="label">Cold Room Area (sqm)</label>
+                                <label class="label">Cold Storage Area (sqm)</label>
                                 <input type="number" id="roiArea" value="120" min="1" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(16,24,40,0.06)">
                             </div>
 
@@ -1604,7 +1615,7 @@
                                 <option value="" disabled selected>Service Interested In</option>
                                 <option value="construction">Construction</option>
                                 <option value="mep">MEP Integration</option>
-                                <option value="cold">Cold Room Solutions</option>
+                                <option value="cold">Cold Storage Solutions</option>
                                 <option value="safety">Safety Systems</option>
                                 <option value="hvac">HVAC Solutions</option>
                                 <option value="management">Project Management</option>
@@ -1641,11 +1652,11 @@
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Modern Construction</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> MEP Integration</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Cold Room Solutions</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Safety Systems</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Project Management</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Modern Construction</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> MEP Integration</a></li>
+                        <li><a href="coldstorage5.html"><i class="fas fa-chevron-right"></i> Cold Storage Solutions</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Safety Systems</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Project Management</a></li>
                     </ul>
                 </div>
                 
@@ -1654,6 +1665,7 @@
                     <ul class="footer-links">
                         <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
                         <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="coldstorage5.html"><i class="fas fa-chevron-right"></i> Cold Storage</a></li>
                         <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
                         <li><a href="#team"><i class="fas fa-chevron-right"></i> Our Team</a></li>
                         <li><a href="#tech-hub"><i class="fas fa-chevron-right"></i> Tech Hub</a></li>
@@ -1799,7 +1811,7 @@
 
         gSend.addEventListener('click', () => {
             const email = document.getElementById('gEmail').value.trim();
-            const doc = gatedModal.dataset.doc || 'coldroom-pack.pdf';
+            const doc = gatedModal.dataset.doc || 'coldstorage-pack.pdf';
             if (!email || !/^\S+@\S+\.\S+$/.test(email)){ 
                 document.getElementById('gMessage').style.display = 'block'; 
                 document.getElementById('gMessage').innerHTML = '<div style="padding:8px;background:#fee;border-radius:6px;color:#7a1a00">Please provide a valid email address.</div>'; 
@@ -1824,7 +1836,7 @@
             }
 
             const capex = area * costPer; // KSh
-            // naive energy model: 10 kWh/sqm-year baseline for cold rooms (placeholder)
+            // naive energy model: 10 kWh/sqm-year baseline for cold storage (placeholder)
             const baselineKwh = area * 10;
             const baselineCost = baselineKwh * kwhCost;
             const annualSavings = baselineCost * savingPct;
@@ -1840,7 +1852,7 @@
         document.getElementById('downloadRoi').addEventListener('click', () => {
             const html = `
                 <html><head><title>Estimate</title></head><body style="font-family:Arial;padding:24px">
-                <h2>Cold Room Estimate</h2>
+                <h2>Cold Storage Estimate</h2>
                 <p>Area: ${document.getElementById('roiArea').value} sqm</p>
                 <p>Total CAPEX (KSh): ${document.getElementById('roiCapex').textContent}</p>
                 <p>Estimated annual energy cost (KSh): ${document.getElementById('roiEnergy').textContent}</p>
@@ -1909,7 +1921,3 @@
     </script>
 </body>
 </html>
-
-
-
-
