@@ -215,30 +215,31 @@
         }
 
         .logo img {
-            width: 54px;
-            height: 54px;
-            object-fit: cover;
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
             filter: none;
             margin-right: 0px;
             margin-left: 0;
-            vertical-align: middle;
+            margin-bottom: auto;
+            vertical-align: auto;
             display: block;
         }
         .logo {
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: flex-end;
             margin-left: 2px;
         }
         
         .logo h1 {
             font-size: 1.0rem;
-            margin: 5;
+            margin: auto;
             color: var(--dark);
             display: flex;
             align-items: flex-end;
             align-self: flex-end;
-            line-height: 1;
+            line-height: 2.0;
         }
 
         .logo h1 .logo-h {
@@ -247,10 +248,10 @@
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            line-height: 0.89;
-            margin-right: 2px;
+            line-height: 1.1;
+            margin-right: 0.5px;
             font-weight: 800;
-            display: inline-block;
+            display: flex;
             text-shadow: 0 2px 4px rgba(245, 124, 0, 0.2);
         }
 
@@ -260,7 +261,7 @@
 
         .header-container {
             display: flex;
-            justify-content: space-between;
+            justify-content: content distribute;
             align-items: center;
         }
 
@@ -300,13 +301,13 @@
             display: flex;
             align-items: center;
             background: rgba(245, 124, 0, 0.1);
-            padding: 8px 15px;
-            border-radius: 50px;
+            padding: 8px 8px;
+            border-radius: 25px;
             font-weight: 600;
         }
 
         .header-contact i {
-            margin-right: 8px;
+            margin-right: 0;
             color: var(--primary);
         }
 
