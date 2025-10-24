@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Construction Ltd | Cold Storage & HVAC Solutions</title>
+    <meta name="description" content="Home Construction Ltd - Integrated construction, MEP, HVAC and cold storage solutions in Kenya. Design · Engineer · Deliver">
+    <meta name="keywords" content="construction kenya, cold storage, refrigeration, HVAC, MEP contractor Nairobi">
+    <meta property="og:title" content="Home Construction Ltd">
+    <meta property="og:description" content="Integrated construction + mechanical systems: Cold rooms, HVAC, MEP services across Kenya.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://homeconstruction.co.ke/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #F57C00;
+            --primary-dark: #e06b00;
+            --primary-light: #FF9800;
+            --secondary: #246B90;
+            --dark: #0F1720;
+            --medium: #334155;
+            --light: #F7F8FA;
+            --white: #FFFFFF;
+            --gold: #F5A524;
+            --navy: #0f2740;
+            --muted: #6b6b6b;
+            --bg: #f6f7f8;
+            --card: #ffffff;
+            --card-radius: 12px;
+            --shadow-sm: 0 4px 12px rgba(15, 23, 32, 0.08);
+            --shadow-lg: 0 12px 30px rgba(15, 23, 32, 0.15);
+            --transition: all 0.5s ease;
+            --max: 1200px;
+        }
+
+        /* ========== BASE STYLES ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            color: var(--dark);
+            background: linear-gradient(180deg, var(--bg) 0%, #f1f3f4 100%);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            color: var(--medium);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+        }
+
+        .container {
+            width: 90%;
+            max-width: var(--max);
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-4 {
+            margin-bottom: 2rem;
+        }
+
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            background: rgba(245, 124, 0, 0.1);
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .chip i {
+            margin-right: 8px;
+        }
+
+        /* ========== UPDATED HEADER STYLES ========== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 10px 0;
+            backdrop-filter: blur(15px);
+        }
+
+        .logo img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+            filter: none;
+            margin-right: 0px;
+            margin-left: 0;
+            margin-bottom: auto;
+            vertical-align: auto;
+            display: block;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-left: 2px;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: content distribute;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 1.0rem;
+            margin: auto;
+            color: var(--dark);
+            display: flex;
+            align-items: flex-end;
+            align-self: flex-end;
+            line-height: 2.0;
+        }
+
+        .logo h1 .logo-h {
+            font-size: 3.0rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 40%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.1;
+            margin-right: 0.5px;
+            font-weight: 800;
+            display: flex;
+            text-shadow: 0 2px 4px rgba(245, 124, 0, 0.2);
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-menu li {
+            margin: 0 12px;
+        }
+
+        .nav-menu a {
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 8px 0;
+            position: relative;
+        }
+
+        .nav-menu a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+
+        .nav-menu a:hover:after {
+            width: 100%;
+        }
+
+        .header-contact {
+            display: flex;
+            align-items: center;
+            background: rgba(245, 124, 0, 0.1);
+            padding: 10px 18px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .header-contact:hover {
+            background: rgba(245, 124, 0, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .header-contact i {
+            margin-right: 8px;
+            color: var(--primary);
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* ========== UPDATED CARD STYLES ========== */
+        .card {
+            background: var(--white);
+            border-radius: var(--card-radius);
+            box-shadow: var(--shadow-lg);
+            padding: 30px;
+            transition: var(--transition);
+            height: 100%;
+            border: 1px solid rgba(0,0,0,0.03);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(15, 23, 32, 0.15);
+        }
+
+        /* ========== ENHANCED SOLUTION CARD STYLES ========== */
+        .solutions-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .solution-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .solution-card .card {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .solution-card h3 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+            min-height: 60px;
+        }
+
+        .solution-card h3 i {
+            margin-right: 12px;
+            color: var(--primary);
+            font-size: 1.8rem;
+        }
+
+        .solution-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .solution-card > .card > p {
+            flex-grow: 1;
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            min-height: 80px;
+        }
+
+        /* ========== ENHANCED SPECIFICATION STYLES ========== */
+        .spec-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin: 20px 0;
+            background: rgba(245, 124, 0, 0.03);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .spec-item:last-child {
+            border-bottom: none;
+        }
+
+        .spec-name {
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .spec-value {
+            color: var(--medium);
+            text-align: right;
+        }
+
+        /* ========== ENHANCED FEATURES STYLES ========== */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .feature-card {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 18px;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            align-items: center;
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .feature-icon {
+            width: 45px;
+            height: 45px;
+            background: rgba(245, 124, 0, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 1.1rem;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+
+        .feature-text h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            color: var(--dark);
+        }
+
+        .feature-text p {
+            font-size: 0.85rem;
+            margin: 0;
+            color: var(--medium);
+            line-height: 1.5;
+        }
+
+        /* ========== EDITION COMPARISON STYLES ========== */
+        .edition-comparison {
+            display: flex;
+            gap: 20px;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+
+        .edition-card {
+            flex: 1;
+            min-width: 250px;
+            background: rgba(245, 124, 0, 0.05);
+            border-radius: var(--card-radius);
+            padding: 22px;
+            border: 2px solid rgba(245, 124, 0, 0.1);
+            transition: var(--transition);
+        }
+
+        .edition-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .edition-card h4 {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 18px;
+            font-size: 1.3rem;
+        }
+
+        /* ========== CARD ACTION BUTTONS ========== */
+        .card-actions {
+            margin-top: auto;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0,0,0,0.05);
+        }
+
+        /* ========== HERO SECTION ========== */
+        .hero {
+            padding: 180px 0 100px;
+            background: linear-gradient(135deg, rgba(245, 124, 0, 0.05) 0%, rgba(36, 107, 144, 0.05) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badges {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 25px 0;
+        }
+
+        .hero-image {
+            position: relative;
+            border-radius: var(--card-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            height: 450px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .hero-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .hero-stats {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .stat-item {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: var(--card-radius);
+            margin-right: 15px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .stat-item:last-child {
+            margin-right: 0;
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--medium);
+        }
+
+        /* ========== JOURNEY SECTION ========== */
+        .journey {
+            background: var(--light);
+        }
+
+        .journey-step {
+            background: var(--card);
+            border-radius: var(--card-radius);
+            padding: 40px;
+            box-shadow: var(--shadow-sm);
+            margin: 30px 0;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .journey-step.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .journey-image {
+            width: 100%;
+            max-width: 900px;
+            height: 420px;
+            border-radius: var(--card-radius);
+            object-fit: cover;
+            box-shadow: var(--shadow-lg);
+            margin-top: 20px;
+        }
+
+        /* ========== PARTNERSHIP SECTION ========== */
+        .partnership {
+            background: var(--light);
+        }
+
+        .partnership-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .partnership-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(36, 107, 144, 0.1);
+            color: var(--secondary);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .partnership-badge i {
+            margin-right: 8px;
+        }
+
+        .partner-logos {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .partner-logo {
+            height: 60px;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: var(--transition);
+        }
+
+        .partner-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        /* ========== BENEFITS SECTION ========== */
+        .benefits {
+            background: var(--light);
+        }
+
+        .benefits-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .benefit-card {
+            text-align: center;
+            padding: 40px 30px;
+        }
+
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(245, 124, 0, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        /* ========== OPTIONAL MODULES SECTION ========== */
+        .modules-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* ========== CONTACT SECTION ========== */
+        .contact {
+            background: linear-gradient(135deg, rgba(15, 23, 32, 0.95) 0%, rgba(36, 107, 144, 0.9) 100%);
+            color: var(--white);
+        }
+
+        .contact .section-title h2 {
+            color: var(--white);
+        }
+
+        .contact .section-title h2:after {
+            background: var(--white);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-info h3 {
+            color: var(--white);
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        .contact-details {
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            margin-bottom: 25px;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .contact-text h4 {
+            color: var(--white);
+            margin-bottom: 5px;
+        }
+
+        .contact-text p, .contact-text a {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .contact-text a:hover {
+            color: var(--white);
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder,
+        .contact-form select::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .contact-form textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        /* ========== FOOTER ========== */
+        footer {
+            background: var(--dark);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 70px 0 30px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 25px;
+            font-size: 1.3rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-col h4:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--primary);
+        }
+
+        .footer-col p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            display: flex;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+            transform: translateX(5px);
+        }
+
+        .footer-links a i {
+            margin-right: 10px;
+            width: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            color: var(--white);
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* ========== RESPONSIVE STYLES ========== */
+        @media (max-width: 992px) {
+            .hero-container,
+            .contact-container,
+            .partnership-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-content {
+                text-align: center;
+            }
+            
+            .hero-badges,
+            .hero-stats {
+                justify-content: center;
+            }
+            
+            .hero-image {
+                height: 400px;
+            }
+            
+            h1 {
+                font-size: 2.8rem;
+            }
+            
+            h2 {
+                font-size: 2.2rem;
+            }
+
+            .edition-comparison {
+                flex-direction: column;
+            }
+            
+            .edition-card {
+                min-width: 100%;
+            }
+            
+            .logo h1 .logo-h {
+                font-size: 2.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                background: var(--white);
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                padding: 30px 0;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+                transition: var(--transition);
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-menu li {
+                margin: 15px 0;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .section {
+                padding: 70px 0;
+            }
+            
+            .stat-item {
+                padding: 15px;
+            }
+            
+            .stat-value {
+                font-size: 2rem;
+            }
+            
+            .partner-logos {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .logo h1 .logo-h {
+                font-size: 2.4rem;
+            }
+            
+            .header-contact {
+                padding: 8px 12px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-stats {
+                flex-direction: column;
+            }
+            
+            .stat-item {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .stat-item:last-child {
+                margin-bottom: 0;
+            }
+            
+            h1 {
+                font-size: 2.3rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .btn {
+                padding: 12px 25px;
+                font-size: 0.9rem;
+            }
+            
+            .logo h1 .logo-h {
+                font-size: 2rem;
+            }
+            
+            .header-contact {
+                display: none;
+            }
+            
+            .logo h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="logo.png" alt="Home Construction Ltd logo">
+                <h1><span class="logo-h">H</span>ome<span>Construction Ltd</span></h1>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#journey">Our Journey</a></li>
+                <li><a href="#partnership">Partnership</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="header-contact">
+                <i class="fas fa-phone-alt"></i>
+                <span>+254 721 393478</span>
+            </div>
+            
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="kicker">Cold Rooms · MEP · Construction</div>
+                <h1>Integrated construction and MEP for high-performance buildings and cold-chain systems across Kenya.</h1>
+                <p class="lead">We combine modern design execution, precision mechanical systems, and end-to-end project management to deliver spaces that work — beautifully and reliably. Specialties: Cold room installations, HVAC, fire safety systems, and full MEP integration.</p>
+                
+                <div class="hero-badges">
+                    <div class="chip"><i class="fas fa-check-circle"></i> 5+ Years Experience</div>
+                    <div class="chip"><i class="fas fa-medal"></i> Quality Guaranteed</div>
+                    <div class="chip"><i class="fas fa-headset"></i> 24/7 Support</div>
+                </div>
+                
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Get a tailored estimate</a>
+                    <a href="#journey" class="btn btn-outline">See our journey</a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">200+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">99%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&q=80" alt="Modern Construction">
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section class="section journey" id="journey">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our HVAC & Refrigeration Journey</h2>
+                <p>From specialized installations to comprehensive climate control solutions</p>
+            </div>
+            
+            <div class="journey-step" id="heat-pump">
+                <h2>Heat Pump Solutions</h2>
+                <p>Our high-efficiency heat pump systems are engineered to deliver reliable temperature regulation across industrial and commercial facilities. We provide energy-efficient solutions that reduce operational costs while maintaining optimal climate conditions.</p>
+                <img class="journey-image" src="images/heat-pump.jpg" alt="Heat pump system">
+            </div>
+
+            <div class="journey-step" id="hospital-air">
+                <h2>Hospital Air Control Facility</h2>
+                <p>Precision-controlled air systems for healthcare environments, ensuring clean, filtered, and climate-stable patient care zones. Our hospital-grade systems meet stringent medical standards for air quality and infection control.</p>
+                <img class="journey-image" src="images/hospital-air-control.jpg" alt="Hospital air control facility">
+            </div>
+
+            <div class="journey-step" id="hvac">
+                <h2>HVAC System Solutions</h2>
+                <p>Comprehensive heating, ventilation, and air conditioning setups — balancing energy efficiency with advanced comfort management. We design integrated systems for commercial, industrial, and residential applications.</p>
+                <img class="journey-image" src="images/hvac-solution.jpg" alt="Industrial HVAC system">
+            </div>
+
+            <div class="journey-step" id="tent-ac">
+                <h2>Tent Air Conditioning</h2>
+                <p>Portable, powerful climate control for temporary structures, event tents, and emergency response units. Our mobile solutions provide comfort in challenging environments where permanent installations aren't feasible.</p>
+                <img class="journey-image" src="images/tent-air-conditioning.jpg" alt="Tent air conditioning setup">
+            </div>
+
+            <div class="journey-step" id="cold-storage">
+                <h2>Cold Storage Solutions</h2>
+                <p>From modular cold rooms to large-scale industrial refrigeration, we provide energy-optimised cold storage designed for Kenya's climate. Our partnership with OYRR brings advanced technology to protect your perishables.</p>
+                <img class="journey-image" src="images/cold-storage.jpg" alt="Cold storage facility">
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section class="section partnership" id="partnership">
+        <div class="container partnership-container">
+            <div>
+                <div class="partnership-badge">
+                    <i class="fas fa-handshake"></i> Strategic Partnership
+                </div>
+                <h2>Enhanced Capabilities Through OYRR Partnership</h2>
+                <p>We've strengthened our cold storage expertise through strategic partnership with OYRR, a leading Chinese HVAC system solution provider. This collaboration brings you industrial-grade refrigeration solutions backed by global technology and local implementation excellence.</p>
+                
+                <p>Our partnership ensures access to advanced cold storage technology, certified installation teams, and comprehensive after-sales support. We combine OYRR's manufacturing expertise with our deep understanding of Kenyan business needs and climate challenges.</p>
+                
+                <div class="hero-btns" style="margin-top: 30px;">
+                    <a href="#contact" class="btn btn-primary">Discuss your project</a>
+                    <a href="#solutions" class="btn btn-outline">View solutions</a>
+                </div>
+            </div>
+            
+            <div>
+                <div class="partner-logos">
+                    <img src="logo.png" alt="Home Construction Ltd" class="partner-logo">
+                    <div style="font-size: 2rem; color: var(--muted);">+</div>
+                    <img src="oyrr-logo.png" alt="OYRR HVAC Solutions" class="partner-logo">
+                </div>
+                
+                <div class="card" style="margin-top: 30px;">
+                    <h3><i class="fas fa-award"></i> Partnership Benefits</h3>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Advanced Technology</h4>
+                                <p>Access to cutting-edge refrigeration systems</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Certified Teams</h4>
+                                <p>Manufacturer-trained installation specialists</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Warranty Coverage</h4>
+                                <p>Comprehensive protection for your investment</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Local Parts</h4>
+                                <p>Rapid response with local inventory</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="section" id="solutions">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Cold Storage Solutions</h2>
+                <p>Comprehensive range of temperature-controlled storage options</p>
+            </div>
+            
+            <div class="solutions-container">
+                <!-- Air-Supported Cold Storage -->
+                <div class="solution-card">
+                    <div class="card">
+                        <h3><i class="fas fa-wind"></i> Air-Supported Cold Storage</h3>
+                        <img src="https://images.unsplash.com/photo-1587334894137-85b6dc49877e?auto=format&fit=crop&q=80" alt="Air-Supported Cold Storage" class="solution-image">
+                        <p>Rapid deployment solution perfect for temporary needs or emergency storage requirements. Ideal for agricultural seasonal use and mobile operations.</p>
+                        
+                        <div class="spec-grid">
+                            <div class="spec-item">
+                                <span class="spec-name">Model</span>
+                                <span class="spec-value">OYRR-ACS</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Temperature Range</span>
+                                <span class="spec-value">0~10°C, adjustable</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Capacity</span>
+                                <span class="spec-value">98 m³</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Floor Area</span>
+                                <span class="spec-value">102 m²</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Deployment</span>
+                                <span class="spec-value">1-Day Setup</span>
+                            </div>
+                        </div>
+                        
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-layer-group"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>PVDF Membrane</h4>
+                                    <p>High-strength light-blocking building material</p>
+                                </div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-truck-moving"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Fully Relocatable</h4>
+                                    <p>Easy to move and set up in different locations</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <a href="#contact" class="btn btn-outline">Inquire about this solution</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Container Cold Storage -->
+                <div class="solution-card">
+                    <div class="card">
+                        <h3><i class="fas fa-box"></i> Container Cold Storage</h3>
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80" alt="Container Cold Storage" class="solution-image">
+                        <p>Mobile and versatile solutions built from shipping containers for permanent or temporary use. Perfect for remote locations and multi-site operations.</p>
+                        
+                        <div class="edition-comparison">
+                            <div class="edition-card">
+                                <h4>Standard Edition</h4>
+                                <div class="spec-grid">
+                                    <div class="spec-item">
+                                        <span class="spec-name">Dimensions</span>
+                                        <span class="spec-value">6.0×2.5×2.9m</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-name">Temperature</span>
+                                        <span class="spec-value">-18°C~10°C</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-name">Rated Power</span>
+                                        <span class="spec-value">2.5KW</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-name">Load Capacity</span>
+                                        <span class="spec-value">5 tons</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="edition-card">
+                                <h4>Pro Edition</h4>
+                                <div class="spec-grid">
+                                    <div class="spec-item">
+                                        <span class="spec-name">Dimensions</span>
+                                        <span class="spec-value">12.2×1.5×2.9m</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-name">Temperature</span>
+                                        <span class="spec-value">-36°C~10°C</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-name">Rated Power</span>
+                                        <span class="spec-value">4.6KW</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-name">Load Capacity</span>
+                                        <span class="spec-value">10 tons</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>IPX5 Rainproof</h4>
+                                    <p>Fully protected against water jets from any direction</p>
+                                </div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-cube"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>New Construction</h4>
+                                    <p>Built from brand new shipping containers</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <a href="#contact" class="btn btn-outline">Inquire about this solution</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Modular Cold Storage -->
+                <div class="solution-card">
+                    <div class="card">
+                        <h3><i class="fas fa-cube"></i> Modular Cold Storage</h3>
+                        <img src="https://images.unsplash.com/photo-1556909114-4d0d853e5e25?auto=format&fit=crop&q=80" alt="Modular Cold Storage" class="solution-image">
+                        <p>Customizable panel-based systems that can be tailored to your specific space and capacity needs. Expandable design for growing businesses.</p>
+                        
+                        <div class="spec-grid">
+                            <div class="spec-item">
+                                <span class="spec-name">Model</span>
+                                <span class="spec-value">OVHRANCS</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Dimensions</span>
+                                <span class="spec-value">Customizable</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Temperature Range</span>
+                                <span class="spec-value">-20°C~15°C</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Rated Power</span>
+                                <span class="spec-value">431 KWh/unit</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Cooling Capacity</span>
+                                <span class="spec-value">2666 KWh/unit</span>
+                            </div>
+                        </div>
+                        
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-igloo"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Thermal Insulation</h4>
+                                    <p>Excellent insulation for energy efficiency</p>
+                                </div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Quick Installation</h4>
+                                    <p>Rapid setup with minimal disruption</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <a href="#contact" class="btn btn-outline">Inquire about this solution</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Large-Scale Cold Storage -->
+                <div class="solution-card">
+                    <div class="card">
+                        <h3><i class="fas fa-warehouse"></i> Large-Scale Cold Storage</h3>
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80" alt="Large-Scale Cold Storage" class="solution-image">
+                        <p>Industrial-grade facilities for high-volume storage with advanced monitoring and automation options. Designed for distribution centers and large operations.</p>
+                        
+                        <div class="spec-grid">
+                            <div class="spec-item">
+                                <span class="spec-name">Model</span>
+                                <span class="spec-value">OVERLISES</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Dimensions</span>
+                                <span class="spec-value">Customizable</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Temperature Range</span>
+                                <span class="spec-value">-20°C~15°C</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Rated Power</span>
+                                <span class="spec-value">431 KWh/unit</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Cooling Capacity</span>
+                                <span class="spec-value">2666 KWh/unit</span>
+                            </div>
+                        </div>
+                        
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-mountain"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Massive Capacity</h4>
+                                    <p>Designed for high-volume storage needs</p>
+                                </div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-universal-access"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Wide Applicability</h4>
+                                    <p>Suitable for various industries and products</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <a href="#contact" class="btn btn-outline">Inquire about this solution</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Our Solutions</h2>
+                <p>Comprehensive benefits for your business operations</p>
+            </div>
+            
+            <div class="benefits-container">
+                <div class="card benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Precision Engineering</h3>
+                    <p>Systems designed for your exact load and climate, ensuring temperature stability and product integrity.</p>
+                </div>
+                
+                <div class="card benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certified Installation</h3>
+                    <p>Manufacturer-trained teams ensure perfect, warranty-compliant builds that meet international standards.</p>
+                </div>
+                
+                <div class="card benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Energy Optimized</h3>
+                    <p>Advanced technology and design focused on reducing your total cost of ownership through energy efficiency.</p>
+                </div>
+                
+                <div class="card benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Rapid Response</h3>
+                    <p>24/7 support and local parts inventory minimize business disruption during maintenance or repairs.</p>
+                </div>
+                
+                <div class="card benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Regulatory Expertise</h3>
+                    <p>Guidance to ensure your facility meets Kenyan and international standards for safety and storage.</p>
+                </div>
+                
+                <div class="card benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Remote Monitoring</h3>
+                    <p>Advanced systems that allow temperature, pressure, and energy monitoring with proactive alerting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional Modules Section -->
+    <section class="section" id="modules">
+        <div class="container">
+            <div class="section-title">
+                <h2>Optional Enhancement Modules</h2>
+                <p>Additional features to optimize your operations</p>
+            </div>
+            
+            <div class="modules-container">
+                <div class="solution-card">
+                    <div class="card">
+                        <h3><i class="fas fa-solar-panel"></i> Solar Power System</h3>
+                        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80" alt="Solar Power System" class="solution-image">
+                        <p>Reduce operational costs and environmental impact with integrated solar solutions.</p>
+                        
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-sun"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Photovoltaic Generation</h4>
+                                    <p>Convert sunlight into usable electricity</p>
+                                </div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-battery-full"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Energy Storage</h4>
+                                    <p>100AH+ battery systems for continuous power</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <a href="#contact" class="btn btn-outline">Learn more about solar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="card">
+                        <h3><i class="fas fa-robot"></i> Automated Systems</h3>
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80" alt="Automated Systems" class="solution-image">
+                        <p>Increase efficiency and storage capacity with automated handling and management.</p>
+                        
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-arrows-alt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Increased Capacity</h4>
+                                    <p>300% more storage with optimized layouts</p>
+                                </div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Higher Throughput</h4>
+                                    <p>5x increase in daily processing capacity</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <a href="#contact" class="btn btn-outline">Learn more about automation</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="card">
+                        <h3><i class="fas fa-tachometer-alt"></i> Monitoring & Analytics</h3>
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80" alt="Monitoring & Analytics" class="solution-image">
+                        <p>Comprehensive oversight of your operations with real-time data and alerts.</p>
+                        
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-thermometer-half"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Temperature Monitoring</h4>
+                                    <p>Real-time tracking of storage conditions</p>
+                                </div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-pie"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Energy Analytics</h4>
+                                    <p>Detailed consumption analysis and reporting</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <a href="#contact" class="btn btn-outline">Learn more about monitoring</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with our team for inquiries or project discussions</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Build Together</h3>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Our Location</h4>
+                                <p>Crestwood Kilimani, Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone & WhatsApp</h4>
+                                <p>+254 721 393478</p>
+                                <a href="https://wa.me/254721393478">Chat on WhatsApp</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email Address</h4>
+                                <p>info@homeconstruction.co.ke</p>
+                                <a href="mailto:info@homeconstruction.co.ke">Send us an email</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Working Hours</h4>
+                                <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                                <p>Emergency Support: 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="quoteForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Service Interested In</option>
+                                <option value="construction">Construction</option>
+                                <option value="mep">MEP Integration</option>
+                                <option value="cold">Cold Storage Solutions</option>
+                                <option value="hvac">HVAC Solutions</option>
+                                <option value="heat-pump">Heat Pump Systems</option>
+                                <option value="hospital">Hospital Air Systems</option>
+                                <option value="management">Project Management</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>HomeConstruction</h4>
+                    <p>Transforming visions into structurally sound, beautifully finished realities across Kenya with over five years of industry expertise.</p>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#journey"><i class="fas fa-chevron-right"></i> HVAC Solutions</a></li>
+                        <li><a href="#solutions"><i class="fas fa-chevron-right"></i> Cold Storage</a></li>
+                        <li><a href="#journey"><i class="fas fa-chevron-right"></i> Heat Pump Systems</a></li>
+                        <li><a href="#journey"><i class="fas fa-chevron-right"></i> Hospital Air Control</a></li>
+                        <li><a href="#modules"><i class="fas fa-chevron-right"></i> Optional Modules</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#journey"><i class="fas fa-chevron-right"></i> Our Journey</a></li>
+                        <li><a href="#partnership"><i class="fas fa-chevron-right"></i> Partnership</a></li>
+                        <li><a href="#solutions"><i class="fas fa-chevron-right"></i> Solutions</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Crestwood Kilimani, Nairobi</a></li>
+                        <li><a href="tel:+254721393478"><i class="fas fa-phone-alt"></i> +254 721 393478</a></li>
+                        <li><a href="mailto:info@homeconstruction.co.ke"><i class="fas fa-envelope"></i> info@homeconstruction.co.ke</a></li>
+                        <li><a href="https://homeconstruction.co.ke"><i class="fas fa-globe"></i> homeconstruction.co.ke</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Home Construction & Mechanical Company. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileToggle.querySelector('i').classList.toggle('fa-bars');
+            mobileToggle.querySelector('i').classList.toggle('fa-times');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileToggle.querySelector('i').classList.add('fa-bars');
+                mobileToggle.querySelector('i').classList.remove('fa-times');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+                header.style.padding = '10px 0';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+                header.style.padding = '15px 0';
+            }
+        });
+
+        // Journey step animation
+        const journeySteps = document.querySelectorAll('.journey-step');
+        const journeyObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    journeyObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        journeySteps.forEach(step => journeyObserver.observe(step));
+
+        // Quote form submission
+        document.getElementById('quoteForm').addEventListener('submit', function(e){
+            e.preventDefault();
+            alert('Thank you for your inquiry! We will contact you within 48 business hours.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
